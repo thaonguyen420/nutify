@@ -1,0 +1,10 @@
+﻿HTML - CSS
+- Dùng bootstrap sắp html và css theo đúng design
+- Apply được font chữ trong design (Open Sans, FontAwesome)
+- Đảm bảo layout ở các mức khác nhau (mobile, tablet)
+Javascript
+- Dùng plugin js tạo slider cho page (Swiper, Owl Carousel).
+- Block thứ 7 bên dưới main slider thay image bằng google map hiển thị địa chỉ 102A, Phùng Văn Cung
+- Dùng js script tạo sticky menu khi scroll trang web vừa qua khỏi main slider
+- Dùng js script hiển thị scroll to top button ngay khi page scroll xuống cuối trang. Nhấn vào button thì scroll trở lại đầu trang.
+- Dùng js script tăng number từ 0 -> giá trị trong design  của block thứ 4 bên dưới main slider ngay khi block hiển thị khi scroll trang
