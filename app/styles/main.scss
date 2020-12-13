@@ -583,9 +583,11 @@
      }
      .box__Ex {
          text-align: right;
+         flex: 1;
      }
      .box__left {
          text-align: left;
+         flex: 1;
      }
      .box-Example {
          .icon {
