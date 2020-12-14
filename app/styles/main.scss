@@ -982,6 +982,13 @@
      .grid-header {
          grid-template-columns: repeat(1, 1fr)
      }
+     .footer.bottom {
+         .grid-header {
+             .item-left {
+                 font-size: 8px;
+             }
+         }
+     }
  }
  /*  nuttron */
  
