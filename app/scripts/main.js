@@ -1,22 +1,43 @@
 var click = document.querySelector('.click-menu'),
     menu_Mobi = document.querySelector('.show-menu'),
     slideIndex = 1,
-    menu_scroll = document.querySelector('.header-bottom'),
-    round = document.querySelector('.round');
-    console.log(menu_scroll);
+    menu_scroll = document.querySelector('.header-bottom');
+    // round = document.querySelector('.round');
 window.addEventListener('scroll', function() {
     if (window.pageYOffset > 100) {
         menu_scroll.classList.add('fix-top');
-        round.classList.add('show-Round');
-
+        // round.classList.add('show-Round');
     } else {
         menu_scroll.classList.remove('fix-top');
-        round.classList.remove('show-Round');
-
+        // round.classList.remove('show-Round');
     }
-
 })
 
+$(window).scroll(function() {
+    var hT = $('.current-number').offset().top,
+        hH = $('.current-number').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH)){
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            })
+     }
+    
+ });
+$(window).scroll(function() {
+   var hT = $('.footer').offset().top,
+       hH = $('.footer').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+       if (wS > (hT+hH-wH)){
+        $( ".round" ).addClass( "show-Round" );
+    }
+    else{
+        $( ".round" ).removeClass( "show-Round" );
+    }
+});
 click.addEventListener('click',function(){
     menu_Mobi.classList.toggle('trax-0');
 })

@@ -427,21 +427,16 @@
  
  @-webkit-keyframes fade {
      from {
-         opacity: .4
+       opacity: 0;
+       transition: all .5s;
      }
      to {
-         opacity: 1
+        opacity: 1;
+        transition: all .5s;
      }
  }
  
- @keyframes fade {
-     from {
-         opacity: .4
-     }
-     to {
-         opacity: 1
-     }
- }
+ 
  
  // ANCHOR box-banner
  .box-text--banner {
@@ -596,8 +591,8 @@
              margin-left: 20px;
              margin-right: 0;
              background: #74c52c;
-             width: 55px;
-             height: 55px;
+             width: 50px;
+             height: 50px;
              text-align: center;
              border-radius: 50px;
              position: relative;
@@ -674,6 +669,7 @@
          grid-gap: 0px;
          .Ex__content {
              position: relative;
+             margin-bottom: 0;
              &:hover {
                  .bg-black {
                      opacity: 1;
@@ -882,11 +878,7 @@
      }
      section.number {
          .box-Example {
-             .icon {
-                 width: 50px;
-                 height: 40px;
-                 border-radius: 50px;
-             }
+             
              .icon__ {
                  width: 23px;
                  height: 18px;
@@ -1036,4 +1028,5 @@
  ::-webkit-scrollbar-thumb {
      background: $blue;
  }
+ 
  
