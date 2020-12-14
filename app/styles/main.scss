@@ -894,6 +894,7 @@
      }
      .header-bottom {
          padding: 20px;
+         border-bottom: 2px solid $blue ;
      }
  }
  
@@ -915,11 +916,11 @@
      .show-menu {
          width: 100%;
          position: fixed;
-         top: 11%;
+        
          background: #212529;
          transform: translateX(-2000px);
          transition: all .5s;
-         height: 89vh;
+         height: 92vh;
          z-index: 14;
      }
      .show-menu.trax-0 {
