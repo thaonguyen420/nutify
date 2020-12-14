@@ -895,6 +895,7 @@
      .header-bottom {
          padding: 20px;
          border-bottom: 2px solid $blue ;
+         position: relative;
      }
  }
  
@@ -915,16 +916,16 @@
      }
      .show-menu {
          width: 100%;
-         position: fixed;
-        
+         position: absolute;
+        top: 103%;
          background: #212529;
          transform: translateX(-2000px);
          transition: all .5s;
-         height: 92vh;
+         height: 100vh;
          z-index: 14;
      }
      .show-menu.trax-0 {
-         transform: translateX(0px);
+         transform: translateX(-20px);
          transition: all .5s;
      }
      .mobi-item,
