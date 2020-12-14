@@ -991,11 +991,18 @@
      .footer.bottom {
          .grid-header {
              .item-left {
-                 font-size: 8px;
+                 font-size: 7px;
              }
          }
      }
+     
  }
+}
+//ANCHOR max-width:500
+@media(max-width:500px){
+    .box-button .btn-click a.text-button{
+        font-size: 13px;
+    }
 }
  /*  nuttron */
  
