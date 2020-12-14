@@ -897,6 +897,7 @@
          border-bottom: 2px solid $blue ;
          position: relative;
      }
+    
  }
  
  //ANCHOR max-width:997
@@ -942,6 +943,8 @@
      section.number .box-Example {
          grid-template-columns: repeat(1, 1fr);
      }
+     section.team .box-Example {
+        grid-template-columns: repeat(4, 4fr);
  }
  
  //ANCHOR max-width:768
@@ -982,7 +985,7 @@
          }
      }
      .grid-header {
-         grid-template-columns: repeat(1, 1fr)
+         grid-template-columns: repeat(1, 1fr);
      }
      .footer.bottom {
          .grid-header {
@@ -1023,4 +1026,5 @@
  
  ::-webkit-scrollbar-thumb {
      background: $blue;
+ }
  }
