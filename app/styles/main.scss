@@ -420,22 +420,22 @@
  
  .fade {
      -webkit-animation-name: fade;
-     -webkit-animation-duration: 1.5s;
+     -webkit-animation-duration: 1.5s all;
      animation-name: fade;
-     animation-duration: 1.5s;
+     animation-duration: 1.5s all;
  }
  
- @-webkit-keyframes fade {
-     from {
-       opacity: 0;
-       transition: all .5s;
-     }
-     to {
-        opacity: 1;
-        transition: all .5s;
-     }
- }
  
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
  
  
  // ANCHOR box-banner
@@ -933,7 +933,7 @@
      section.footer .container .grid-footer {
          grid-template-columns: repeat(2, 2fr);
      }
-     section.number .box-Example {
+     section.number .box-Example,section.video .box-Example {
          grid-template-columns: repeat(1, 1fr);
      }
      section.team .box-Example {
